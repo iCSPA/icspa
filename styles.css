@@ -1,4 +1,11 @@
-body {
+# إضافة التغييرات
+git add .
+
+# إنشاء commit مع رسالة
+git commit -m "تحديث styles.css ونشر التعديلات"
+
+# دفع التغييرات إلى الفرع الرئيسي
+git push origin mainbody {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -35,6 +42,14 @@ section {
     padding: 2rem;
     margin: 1rem auto;
     max-width: 800px;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
 }
 
 footer {
