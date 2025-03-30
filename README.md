@@ -1,6 +1,7 @@
-# موقعي الشخصي
+# ICSPA
 
-هذا الموقع هو نسخة شبيهة بالموقع المذكور في ملف README. تم تصميمه باستخدام HTML فقط.
+## Images
+All images referenced in the site should be placed in the `/assets/images/` directory.
 
 ## النشر
 

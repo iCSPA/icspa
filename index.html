@@ -1,26 +1,95 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي</title>
+    <title>ICSPA</title>
     <link rel="stylesheet" href="./styles/theme.css">
     <!-- ...يمكن إضافة روابط CSS أو مكتبات خارجية هنا... -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #0044cc;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+        }
+        section#gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>مرحبًا بكم في موقعي</h1>
-        <!-- ...إضافة قائمة التنقل هنا إذا لزم الأمر... -->
+        <h1>Welcome to ICSPA</h1>
+        <p>The International Organization for Security, Peace, and Anti-Corruption</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>عن الموقع</h2>
-            <p>هذا الموقع هو نسخة شبيهة بالموقع المذكور في ملف README.</p>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to promoting security, peace, and fighting corruption worldwide.</p>
         </section>
-        <!-- ...إضافة أقسام أخرى حسب الحاجة... -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Security and Peace Enhancement</li>
+                <li>Anti-Corruption Initiatives</li>
+                <li>Legal Consultations</li>
+            </ul>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <img src="./images/security.jpg" alt="Security">
+            <img src="./images/peace.jpg" alt="Peace">
+            <img src="./images/anti-corruption.jpg" alt="Anti-Corruption">
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please email us at: <a href="mailto:info@icspa.org">info@icspa.org</a></p>
+        </section>
     </main>
     <footer>
-        <p>حقوق النشر &copy; 2023</p>
+        <p>&copy; 2023 ICSPA. All rights reserved.</p>
     </footer>
 </body>
 </html>
