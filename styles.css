@@ -1,11 +1,4 @@
-# إضافة التغييرات
-git add .
-
-# إنشاء commit مع رسالة
-git commit -m "تحديث styles.css ونشر التعديلات"
-
-# دفع التغييرات إلى الفرع الرئيسي
-git push origin mainbody {
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
