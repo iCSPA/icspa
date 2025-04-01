@@ -3,33 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تسجيل حساب جديد</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>التسجيل</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1abc9c;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>ICSPAC</h1>
-    </header>
-    <main>
-        <form action="/register" method="post">
-            <label for="name">الاسم الكامل:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="password">كلمة المرور:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <label for="confirm-password">تأكيد كلمة المرور:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-            
-            <button type="submit">تسجيل</button>
-        </form>
-        <p>لديك حساب بالفعل؟ <a href="#login">تسجيل الدخول</a></p>
-    </main>
-    <footer>
-        <p>© ٢٠٢٥ اللجنة الدولية للأمن والسلام ومكافحة الفساد. جميع الحقوق محفوظة.</p>
-    </footer>
+    <h1>التسجيل</h1>
+    <form action="/register" method="post">
+        <label for="name">الاسم الكامل:</label>
+        <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+        <label for="password">كلمة المرور:</label>
+        <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+
+        <button type="submit">تسجيل</button>
+    </form>
+    <p>لديك حساب بالفعل؟ <a href="/index.html#login">اضغط هنا لتسجيل الدخول</a></p>
 </body>
 </html>
