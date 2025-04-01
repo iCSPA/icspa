@@ -11,32 +11,45 @@
             text-align: justify;
         }
 
-        /* تنسيق قائمة التنقل كأزرار */
+        /* تعديل تصميم قائمة التنقل */
         .navbar {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 0; /* إزالة الفجوات بين العناصر */
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
         .navbar li {
+            flex: 1; /* جعل العناصر متساوية في العرض */
             margin: 0;
         }
 
         .navbar a {
-            display: inline-block;
-            padding: 10px 20px;
+            display: block;
+            padding: 20px 0; /* زيادة المساحة الداخلية */
             text-decoration: none;
             color: white;
-            background-color: #2980b9;
-            border-radius: 5px;
+            text-align: center;
+            background-color: #2980b9; /* اللون الافتراضي */
             transition: background-color 0.3s ease;
         }
 
+        .navbar a:nth-child(1) {
+            background-color: #e74c3c; /* لون مختلف لتسجيل الدخول */
+        }
+
+        .navbar a:nth-child(2) {
+            background-color: #27ae60; /* لون مختلف لاتصل بنا */
+        }
+
+        .navbar a:nth-child(3) {
+            background-color: #f39c12; /* لون مختلف للموارد */
+        }
+
         .navbar a:hover {
-            background-color: #1abc9c;
+            background-color: #1abc9c; /* لون عند التمرير */
         }
 
         /* ألوان مختلفة لعناوين الفقرات */
@@ -161,7 +174,7 @@
                 <input type="password" id="password" name="password" required>
                 <button type="submit">تسجيل الدخول</button>
             </form>
-            <p>ليس لديك حساب؟ <a href="/register.html">سجل الآن</a></p>
+            <p>ليس لديك حساب؟ <a href="/register.html">سجل الآن</a></p> <!-- تعديل الرابط -->
         </section>
     </main>
 
