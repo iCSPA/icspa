@@ -87,6 +87,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 form label {
@@ -94,22 +96,23 @@ form label {
 }
 
 form input {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 form button {
     padding: 10px;
-    background-color: #004080;
+    background-color: #2980b9;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #003060;
+    background-color: #1abc9c;
 }
 
 /* تنسيق الروابط */
